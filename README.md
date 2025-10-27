@@ -37,7 +37,7 @@ This project employs a **hybrid approach** combining qualitative and computation
 - Assigns data type and activity context labels
 - Probability calibration for meaningful confidence scores
 
-### Phase 4: LLM Validation (Optional)
+### Phase 4: LLM Validation
 - Prompt-engineered LLM validator for low-confidence or ambiguous cases
 - Strict JSON output format for reproducibility
 - Full logging of LLM-assisted decisions
