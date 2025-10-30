@@ -273,4 +273,4 @@ python analyze_policy.py --help
 
 ---
 
-*最后更新: 2024年1月*
+*最后更新: 2025年10月*
