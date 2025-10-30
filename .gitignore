@@ -1,0 +1,39 @@
+# Python虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分析结果和报告
+*_analysis.md
+*_analysis.txt
+*_analysis.json
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# 测试和覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 日志
+*.log
+
+# spaCy模型（如果手动下载了本地文件）
+*.tar.gz
+*.whl
+

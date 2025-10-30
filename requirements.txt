@@ -1,0 +1,32 @@
+# 隐私政策分析器 - 依赖包
+
+# 核心NLP库
+spacy>=3.7.0
+# 需要下载模型: python -m spacy download en_core_web_sm
+
+# 可选：用于更高级的功能
+# allennlp>=2.10.0  # 语义角色标注
+# allennlp-models>=2.10.0
+
+# Transformer模型（用于分类任务）
+# transformers>=4.30.0
+# torch>=2.0.0  # PyTorch（如果使用transformers）
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 报告生成
+markdown>=3.4.0
+
+# 可选：用于可视化
+# matplotlib>=3.7.0
+# seaborn>=0.12.0
+
+# 开发工具
+pytest>=7.4.0  # 用于测试
+black>=23.0.0  # 代码格式化
+
+
+
+
