@@ -132,3 +132,6 @@ In addition, we may use safety specialists to investigate abuse reports in real 
 5.12.g. If you use any MPT Products in your capacity as a developer of software or content for use on the MPT Products pursuant to a developer agreement, in the event of a conflict between such developer agreement and these Supplemental Terms, the developer agreement shall govern to the extent of the conflict.
 
 
+
+
+

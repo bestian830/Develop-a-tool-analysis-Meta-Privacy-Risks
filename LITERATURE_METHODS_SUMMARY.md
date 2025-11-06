@@ -2291,3 +2291,6 @@ def comprehensive_privacy_analysis(policy_text, app_code=None):
 
 
 
+
+
+

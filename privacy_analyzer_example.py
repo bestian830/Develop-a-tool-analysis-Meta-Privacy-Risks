@@ -283,58 +283,57 @@ class PrivacyPolicyAnalyzer:
     
     def generate_explanation(self, params: Dict[str, Any], category: str, risk_score: float) -> str:
         """
-        生成可解释的分析说明
+        Generate explainable analysis description
         
-        参数:
-            params: 隐私参数
-            category: PIPEDA类别
-            risk_score: 风险分数
+        Args:
+            params: Privacy parameters
+            category: PIPEDA category
+            risk_score: Risk score
             
-        返回:
-            解释文本
+        Returns:
+            Explanation text
         """
         explanation_parts = []
         
-        # 类别说明
-        category_cn = self.PIPEDA_CATEGORIES.get(category, category)
-        explanation_parts.append(f"该条款属于PIPEDA框架中的「{category_cn}」类别。")
+        # Category description
+        explanation_parts.append(f"This clause falls under the PIPEDA category of '{category}'.")
         
-        # 数据收集
+        # Data collection
         if params["data_types"]:
-            data_list = ", ".join(params["data_types"][:5])  # 最多显示5个
-            explanation_parts.append(f"收集的数据类型包括: {data_list}。")
+            data_list = ", ".join(params["data_types"][:5])  # Show up to 5
+            explanation_parts.append(f"Data types collected include: {data_list}.")
         
-        # 数据使用目的
+        # Data purposes
         if params["purposes"]:
             purpose_list = ", ".join(params["purposes"][:3])
-            explanation_parts.append(f"数据使用目的: {purpose_list}。")
+            explanation_parts.append(f"Data usage purposes: {purpose_list}.")
         
-        # 第三方共享
+        # Third party sharing
         if params["third_parties"]:
             party_count = len(params["third_parties"])
             if party_count > 0:
-                explanation_parts.append(f"数据可能与 {party_count} 个第三方共享。")
+                explanation_parts.append(f"Data may be shared with {party_count} third parties.")
         
-        # 数据保留
+        # Data retention
         if params["retention_period"]:
-            explanation_parts.append(f"数据保留期限: {params['retention_period']}。")
+            explanation_parts.append(f"Data retention period: {params['retention_period']}.")
         
-        # 用户权利
+        # User rights
         if params["user_rights"]:
             rights_list = ", ".join(params["user_rights"])
-            explanation_parts.append(f"提到的用户权利: {rights_list}。")
+            explanation_parts.append(f"User rights mentioned: {rights_list}.")
         
-        # 安全措施
+        # Security measures
         if params["security_measures"]:
             security_list = ", ".join(params["security_measures"][:3])
-            explanation_parts.append(f"安全措施: {security_list}。")
+            explanation_parts.append(f"Security measures: {security_list}.")
         
-        # 风险评估
-        risk_level = "低" if risk_score < 0.3 else "中" if risk_score < 0.6 else "高"
-        explanation_parts.append(f"\n风险评估: {risk_level}风险 (分数: {risk_score:.2f})")
+        # Risk assessment
+        risk_level = "Low" if risk_score < 0.3 else "Medium" if risk_score < 0.6 else "High"
+        explanation_parts.append(f"\nRisk Assessment: {risk_level} risk (score: {risk_score:.2f})")
         
         if risk_score > 0.5:
-            explanation_parts.append("⚠️ 建议: 该条款存在较高的隐私风险，需要仔细审查。")
+            explanation_parts.append("⚠️ Recommendation: This clause presents higher privacy risks and requires careful review.")
         
         return "\n".join(explanation_parts)
     
@@ -437,87 +436,86 @@ class PrivacyPolicyAnalyzer:
             return self._generate_text_report(analysis_results)
     
     def _generate_markdown_report(self, results: Dict[str, Any]) -> str:
-        """生成Markdown格式报告"""
+        """Generate Markdown format report"""
         summary = results["summary"]
         segments = results["segment_analyses"]
         
         report = []
-        report.append("# 隐私政策分析报告\n")
+        report.append("# Privacy Policy Analysis Report\n")
         
-        # 总体摘要
-        report.append("## 总体摘要\n")
-        report.append(f"- **分析段落数**: {summary['total_segments']}")
-        report.append(f"- **平均风险分数**: {summary['average_risk_score']:.2f}")
-        report.append(f"- **发现的数据类型**: {len(summary['total_data_types'])} 种")
-        report.append(f"- **涉及的第三方**: {len(summary['total_third_parties'])} 个\n")
+        # Summary
+        report.append("## Summary\n")
+        report.append(f"- **Segments Analyzed**: {summary['total_segments']}")
+        report.append(f"- **Average Risk Score**: {summary['average_risk_score']:.2f}")
+        report.append(f"- **Data Types Found**: {len(summary['total_data_types'])} types")
+        report.append(f"- **Third Parties Involved**: {len(summary['total_third_parties'])} entities\n")
         
-        # 类别分布
-        report.append("## PIPEDA类别分布\n")
+        # Category distribution
+        report.append("## PIPEDA Category Distribution\n")
         for category, count in sorted(summary['category_distribution'].items(), 
                                       key=lambda x: x[1], reverse=True):
-            category_cn = self.PIPEDA_CATEGORIES.get(category, category)
-            report.append(f"- {category_cn} ({category}): {count} 个段落")
+            report.append(f"- {category}: {count} segments")
         report.append("\n")
         
-        # 收集的数据类型
+        # Data types collected
         if summary['total_data_types']:
-            report.append("## 收集的数据类型\n")
-            for dt in sorted(summary['total_data_types'])[:20]:  # 最多显示20个
+            report.append("## Data Types Collected\n")
+            for dt in sorted(summary['total_data_types'])[:20]:  # Show top 20
                 report.append(f"- {dt}")
             report.append("\n")
         
-        # 涉及的第三方
+        # Third parties involved
         if summary['total_third_parties']:
-            report.append("## 涉及的第三方\n")
+            report.append("## Third Parties Involved\n")
             for tp in sorted(summary['total_third_parties'])[:20]:
                 report.append(f"- {tp}")
             report.append("\n")
         
-        # 高风险段落
+        # High risk segments
         high_risk_segments = [s for s in segments if s['risk_score'] > 0.5]
         if high_risk_segments:
-            report.append("## ⚠️ 高风险段落\n")
-            for i, segment in enumerate(high_risk_segments[:5], 1):  # 最多显示5个
-                report.append(f"### 段落 {i} (风险分数: {segment['risk_score']:.2f})\n")
-                report.append(f"**原文**: {segment['text'][:200]}...\n")
-                report.append(f"**分析**:\n{segment['explanation']}\n")
+            report.append("## ⚠️ High Risk Segments\n")
+            for i, segment in enumerate(high_risk_segments[:5], 1):  # Show top 5
+                report.append(f"### Segment {i} (Risk Score: {segment['risk_score']:.2f})\n")
+                report.append(f"**Text**: {segment['text'][:200]}...\n")
+                report.append(f"**Analysis**:\n{segment['explanation']}\n")
         
-        # 详细分析
-        report.append("## 详细分析\n")
+        # Detailed analysis
+        report.append("## Detailed Analysis\n")
         for i, segment in enumerate(segments, 1):
-            report.append(f"### 段落 {i}\n")
-            report.append(f"**原文**: {segment['text']}\n")
-            report.append(f"**类别**: {segment['category_cn']}\n")
-            report.append(f"**风险分数**: {segment['risk_score']:.2f}\n")
-            report.append(f"**分析**:\n{segment['explanation']}\n")
+            report.append(f"### Segment {i}\n")
+            report.append(f"**Text**: {segment['text']}\n")
+            report.append(f"**Category**: {segment['category']}\n")
+            report.append(f"**Risk Score**: {segment['risk_score']:.2f}\n")
+            report.append(f"**Analysis**:\n{segment['explanation']}\n")
             report.append("---\n")
         
         return "\n".join(report)
     
     def _generate_text_report(self, results: Dict[str, Any]) -> str:
-        """生成纯文本格式报告"""
+        """Generate plain text format report"""
         summary = results["summary"]
         segments = results["segment_analyses"]
         
         report = []
         report.append("=" * 60)
-        report.append("隐私政策分析报告")
+        report.append("Privacy Policy Analysis Report")
         report.append("=" * 60)
         report.append("")
         
-        report.append("总体摘要:")
-        report.append(f"  分析段落数: {summary['total_segments']}")
-        report.append(f"  平均风险分数: {summary['average_risk_score']:.2f}")
-        report.append(f"  数据类型数量: {len(summary['total_data_types'])}")
-        report.append(f"  第三方数量: {len(summary['total_third_parties'])}")
+        report.append("Summary:")
+        report.append(f"  Segments analyzed: {summary['total_segments']}")
+        report.append(f"  Average risk score: {summary['average_risk_score']:.2f}")
+        report.append(f"  Data types found: {len(summary['total_data_types'])}")
+        report.append(f"  Third parties: {len(summary['total_third_parties'])}")
         report.append("")
         
-        # 详细分析
+        # Detailed analysis
         for i, segment in enumerate(segments, 1):
             report.append("-" * 60)
-            report.append(f"段落 {i}:")
-            report.append(f"类别: {segment['category_cn']}")
-            report.append(f"风险分数: {segment['risk_score']:.2f}")
+            report.append(f"Segment {i}:")
+            report.append(f"Category: {segment['category']}")
+            report.append(f"Risk score: {segment['risk_score']:.2f}")
             report.append(f"\n{segment['explanation']}")
             report.append("")
         
@@ -572,6 +570,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
