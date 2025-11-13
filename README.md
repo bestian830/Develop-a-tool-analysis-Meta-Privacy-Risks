@@ -10,38 +10,84 @@
 
 ## 🚀 快速开始
 
+### 一键启动（推荐）
+
+**macOS / Linux:**
 ```bash
-# 1. 创建虚拟环境
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# 2. 安装依赖
-pip install -r requirements.txt
-
-# 3. 下载spaCy模型
-python -m spacy download en_core_web_sm
-
-# 4. 运行示例
-python demo_nlp_vs_simple.py
-python analyze_policy.py example_privacy_policy.txt
+./start.sh
 ```
+
+**Windows:**
+```cmd
+start.bat
+```
+
+启动脚本会自动：
+- ✅ 检查并安装所有依赖
+- ✅ 同时启动后端和前端服务
+- ✅ 显示访问地址
+
+### 手动启动
+
+如果需要分别启动：
+
+**1. 启动后端：**
+```bash
+# 激活虚拟环境
+source venv/bin/activate  # macOS/Linux
+# 或
+venv\Scripts\activate  # Windows
+
+# 启动API服务器
+python run_api.py
+```
+
+**2. 启动前端（新终端）：**
+```bash
+cd frontend
+npm install --legacy-peer-deps  # 首次运行
+npm start
+```
+
+**访问地址：**
+- 前端: http://localhost:3000
+- 后端API: http://localhost:5001
+
+### 公网访问（使用 ngrok）
+
+如果需要通过公网访问应用（用于演示、移动设备测试等）：
+
+**同时转发前端和后端（推荐）：**
+```bash
+./start_with_ngrok_both.sh
+```
+
+**只转发前端：**
+```bash
+./start_with_ngrok.sh
+```
+
+详细说明请查看：
+- [ngrok 使用指南](./NGROK_GUIDE.md) - 完整使用说明
+- [同时转发前后端指南](./NGROK_BOTH_GUIDE.md) - 快速上手指南
 
 ---
 
 ## 📖 完整文档
 
-**所有文档已整合到一个文件中**: 
+**项目采用模块化文档结构**:
 
-### 👉 [完整项目文档.md](./完整项目文档.md)
+### 📂 主要文档
 
-该文档包含：
-- ✅ 安装配置指南
-- ✅ 详细使用教程
-- ✅ 方法论详解（含文献引用）
-- ✅ 代码结构说明
-- ✅ 评估与基准测试
-- ✅ 答辩要点和常见问题
-- ✅ 完整的API文档
+- 👉 [完整项目文档 (中文)](./docs/complete_guide_zh.md) - 详细使用指南和方法论
+- 👉 [技术简报 (英文)](./docs/technical_brief_en.md) - 向教授汇报用的技术全貌
+- 📊 [项目结构说明](./PROJECT_STRUCTURE.md) - 文件组织说明
+
+### 📚 技术文档
+
+- [SRL改进报告](./docs/srl_improvements.md) - 语义角色标注效果分析
+- [噪音过滤原理](./docs/noise_filtering.md) - 如何过滤爬虫干扰内容
+- [文献综述](./docs/literature_review.md) - 学术基础和方法论依据
 
 ---
 
@@ -58,27 +104,35 @@ python analyze_policy.py example_privacy_policy.txt
 ## 📦 项目结构
 
 ```
-capestone/
-├── 完整项目文档.md                    ⭐ 主要文档（所有内容）
-├── README.md                          # 本文件
-├── requirements.txt                   # Python依赖
+privacy-policy-analyzer/
+├── README.md                       # 本文件
+├── requirements.txt                # Python依赖
 │
-├── privacy_analyzer_example.py        # 核心分析器（简洁版）
-├── privacy_analyzer_with_citations.py # 核心分析器（带文献引用）
-├── analyze_policy.py                  # 命令行工具
-├── benchmark.py                       # 基准测试工具
-├── demo_nlp_vs_simple.py             # NLP能力演示
+├── src/                           # 源代码
+│   ├── analyzer.py                # 主分析器 ⭐
+│   ├── srl_extractor.py           # SRL参数提取器
+│   ├── semantic_analyzer.py       # 增强语义分析
+│   └── analyzer_with_docs.py      # 带文献引用版本
 │
-├── example_privacy_policy.txt         # 示例隐私政策
-├── example_privacy_policy_analysis.md # 示例分析报告
+├── tools/                         # 命令行工具
+│   ├── analyze.py                 # 分析工具 ⭐
+│   ├── compare_versions.py        # 版本对比 ⭐
+│   ├── fetch_policy.py            # 爬虫工具
+│   └── benchmark.py               # 基准测试
 │
-├── methodology_paper.tex              # LaTeX学术论文
-├── METHODOLOGY_WITH_CITATIONS.md      # 详细方法论+引用
-├── literature_review_and_methodology.md # 文献综述
+├── docs/                          # 文档
+│   ├── technical_brief_en.md      # 英文技术简报
+│   ├── complete_guide_zh.md       # 完整中文指南
+│   ├── srl_improvements.md        # SRL改进报告
+│   ├── noise_filtering.md         # 噪音过滤原理
+│   └── literature_review.md       # 文献综述
 │
-├── .gitignore                         # Git忽略配置
-└── Liture/                            # 参考文献PDF（8个）
+└── data/                          # 数据
+    └── examples/
+        └── facebook_policy.txt    # 示例隐私政策
 ```
+
+详见 [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)
 
 ---
 
@@ -87,23 +141,28 @@ capestone/
 ### 命令行方式
 
 ```bash
-# 基础分析
-python analyze_policy.py policy.txt
+# 基础分析（纯本地，免费）
+python tools/analyze.py policy.txt
 
 # 生成Markdown报告
-python analyze_policy.py policy.txt -o report.md -f markdown
+python tools/analyze.py policy.txt -o report.md -f markdown
+
+# LLM 增强模式（提高准确性，需要 API key）
+python tools/analyze.py policy.txt --use-llm --llm-api-key "your-deepseek-key"
 
 # 显示详细信息
-python analyze_policy.py policy.txt --verbose
+python tools/analyze.py policy.txt --verbose
 
 # 仅显示摘要
-python analyze_policy.py policy.txt --show-summary-only
+python tools/analyze.py policy.txt --show-summary-only
 ```
 
 ### Python API方式
 
 ```python
-from privacy_analyzer_example import PrivacyPolicyAnalyzer
+import sys
+sys.path.insert(0, 'src')
+from analyzer import PrivacyPolicyAnalyzer
 
 # 初始化分析器
 analyzer = PrivacyPolicyAnalyzer()
@@ -121,7 +180,7 @@ print(report)
 
 ## 📊 分析示例
 
-运行 `python analyze_policy.py example_privacy_policy.txt` 输出：
+运行 `python tools/analyze.py data/examples/facebook_policy.txt` 输出：
 
 ```
 ============================================================
@@ -140,6 +199,27 @@ PIPEDA类别分布:
   ...
 ============================================================
 ```
+
+---
+
+## 🚀 新功能：LLM 辅助增强 (可选)
+
+现在支持使用大语言模型（LLM）辅助提取，提高准确性！
+
+**特点：**
+- ✅ **本地优先**：默认使用 spaCy + Transformer（免费）
+- ✅ **可选增强**：需要时启用 LLM（低成本）
+- ✅ **支持多个提供商**：DeepSeek（推荐）, OpenAI, Claude
+
+**使用：**
+```bash
+export DEEPSEEK_API_KEY="sk-b0b770ea4c6c40aca383cdf5e5f6008e"
+python tools/analyze.py policy.txt --use-llm
+```
+
+**成本：** 分析一个完整政策约 ¥0.01-0.05（DeepSeek）
+
+详见：[LLM 集成指南](./docs/llm_integration.md) ⭐
 
 ---
 
@@ -251,25 +331,27 @@ MIT License
 ## ⭐ 核心命令速查
 
 ```bash
-# 演示NLP能力
-python demo_nlp_vs_simple.py
-
-# 运行示例分析
-python privacy_analyzer_example.py
-
 # 分析隐私政策
-python analyze_policy.py example_privacy_policy.txt
+python tools/analyze.py data/examples/facebook_policy.txt
+
+# 对比两个版本
+python tools/compare_versions.py policy_v1.txt policy_v2.txt
+
+# 爬取隐私政策
+python tools/fetch_policy.py
 
 # 创建基准测试
-python benchmark.py --create-sample
+python tools/benchmark.py --create-sample
 
 # 查看帮助
-python analyze_policy.py --help
+python tools/analyze.py --help
 ```
 
 ---
 
-**详细文档请阅读**: [完整项目文档.md](./完整项目文档.md) ⭐
+**详细文档请阅读**:
+- 中文: [docs/complete_guide_zh.md](./docs/complete_guide_zh.md) ⭐
+- English: [docs/technical_brief_en.md](./docs/technical_brief_en.md) ⭐
 
 ---
 

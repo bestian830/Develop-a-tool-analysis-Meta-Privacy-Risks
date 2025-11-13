@@ -1,39 +1,43 @@
-# Python虚拟环境
-venv/
-env/
-ENV/
-.venv/
-
-# Python缓存
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
 
-# 分析结果和报告
-*_analysis.md
-*_analysis.txt
-*_analysis.json
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
-# IDE配置
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# macOS
+# OS
 .DS_Store
+Thumbs.db
 
-# 测试和覆盖率
-.pytest_cache/
-.coverage
-htmlcov/
-
-# 日志
-*.log
-
-# spaCy模型（如果手动下载了本地文件）
-*.tar.gz
-*.whl
-
+# Environment
+.env
+.env.local

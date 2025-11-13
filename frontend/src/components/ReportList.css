@@ -1,0 +1,70 @@
+.report-list {
+  width: 100%;
+}
+
+.report-list-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.report-card {
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.report-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  border-color: rgba(74, 144, 226, 0.3);
+}
+
+@media (max-width: 768px) {
+  .report-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.report-list .ant-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .report-list .ant-card {
+    border-radius: 10px;
+  }
+  
+  .report-list .ant-list-grid .ant-col {
+    margin-bottom: 12px;
+  }
+}
+
+.report-list .ant-empty {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .report-list .ant-empty {
+    padding: 16px;
+  }
+  
+  .report-list .ant-typography-title {
+    font-size: 18px !important;
+  }
+  
+  .report-list .ant-card-body {
+    padding: 16px !important;
+  }
+}
