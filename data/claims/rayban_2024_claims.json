@@ -1,0 +1,768 @@
+[
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 9,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [],
+    "source_text": "The Ray-Ban.com website available at the following link ray-ban.com/uk (hereinafter, the \"Website\") is managed by Luxottica Group S.p.A., acting as data controller (hereinafter, “Luxottica”) in the processing of your personal data as outlined in this data protection policy (hereinafter, the “Data Protection Policy”)."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 13,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "usage_events"
+    ],
+    "source_text": "As outlined in more details below, Luxottica processes your personal data in order to provide you with its products and services as well as to allow you to join engagement programs, prize competitions and events organized by Luxottica for its clients."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 14,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "If you want to receive the latest news, offers and promotions on the Luxottica world, Luxottica will process – with your prior consent – your personal data in order to send you marketing communications, also customized upon your preferences and interests."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 22,
+    "activity": [
+      "purchase_glasses",
+      "share_to_social"
+    ],
+    "data_collected": [
+      "identifier",
+      "location",
+      "usage_events"
+    ],
+    "source_text": "Identifiable information provided during the registration process, the creation of an account on the Website or when completing your purchase order or join Luxottica engagement programs, prize competitions and events, such as name and surname, e-mail address, user ID, password, gender, country of residence, postal address and phone numbers;"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 25,
+    "activity": [
+      "pair_device",
+      "share_to_social"
+    ],
+    "data_collected": [],
+    "source_text": "Information relating to the your social network profile, if public and if you decide to log into the Website through social network applications or to link your Luxottica account to the your public profiles available on social networks, and share your actions through the Website on those channels via the corresponding plug-ins (e.g. Facebook Connect, I like, fb share, etc.)."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 26,
+    "activity": [
+      "share_to_social"
+    ],
+    "data_collected": [],
+    "source_text": "If you decide to share such information, Personal Data published on your social network profile will be collected by the Website and processed for the corresponding functions."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 29,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "health"
+    ],
+    "source_text": "In case of purchase of prescription glasses through the Website, Luxottica will collect – with your prior explicit consent – health related data contained in your eyesight prescription to be provided in order to purchase your prescription glasses (hereinafter the \"Prescription Data\")."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 34,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "For security purposes, Luxottica processes the log files related to each session when the user logins into his/her account, as well as information on payment transactions that will be processed through Luxottica e-payment provider;"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 36,
+    "activity": [
+      "create_account"
+    ],
+    "data_collected": [
+      "device_info",
+      "identifier"
+    ],
+    "source_text": "Luxottica uses some technologies (e.g. cookies and automatic tracking systems) that automatically collect certain items of information relating to the way in which the user utilizes the Website such as the IP address or other unique code of the device (computer, mobile or other devices) employed by the user to browse the Website, identification as registered user or not, technical information that may include the URL from where a user originates, browser information, language."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 40,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "For further information on the use of Personal Data collected through cookies and tracking systems, please read carefully the Luxottica Cookie Policy available here"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 44,
+    "activity": [],
+    "data_collected": [
+      "health"
+    ],
+    "source_text": "Save for Prescription Data, Luxottica processes your Personal Data for the purposes necessary for the provision of services and products offered through the Website, and in particular for the following Contractual Purposes:"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 50,
+    "activity": [
+      "share_to_social"
+    ],
+    "data_collected": [
+      "health"
+    ],
+    "source_text": "To fulfil the user’s requests (e.g. management of requests for information, [booking of eyesight checks], providing the “share with a friend” feature, to notify you with the “back in stock” feature, etc.);"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 55,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "health"
+    ],
+    "source_text": "In relation to Prescription Data, this can be processed by Luxottica only with the your prior explicit consent pursuant to Article 9 of the GDPR to perform the purchase of prescription glasses through the Website."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 56,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "health"
+    ],
+    "source_text": "However, if you don’t grant your explicit consent to the processing of your Prescription Data for the above mentioned purposes, you will not be able to purchase prescription glasses through the Website."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 62,
+    "activity": [
+      "visit_rayban_website"
+    ],
+    "data_collected": [],
+    "source_text": "If you don’t want your Personal Data to be processed for such purposes, you cannot use the Website."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 64,
+    "activity": [],
+    "data_collected": [
+      "health"
+    ],
+    "source_text": "Except for Prescription Data, Luxottica processes, with your prior consent, your Personal Data, for the following Marketing Purposes:"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 66,
+    "activity": [],
+    "data_collected": [
+      "usage_events"
+    ],
+    "source_text": "Furthermore, according to Article 130(4) of the Italian Privacy Code, if you already are a Luxottica customer, Luxottica may send you commercial communications via e-mail on similar products, events and services already provided to you, unless you object to such a processing at the time of the collection and on the occasion of each message."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 72,
+    "activity": [
+      "pair_device",
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "If you provided your consent to the processing of your Personal Data for Marketing Purposes, Luxottica may process your Personal Data for Segmentation Purposes to analyze your Personal Data related to spending volume, product category, date of birth and methods of purchase in connection with activities performed for Marketing Purposes."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 75,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "In case you consented to install cookies and other technologies with the banner prompted to you on our website, additionally to what is stated above, Luxottica processes your Personal Data for Profiling Purposes to analyze your interests and preferences, includingbrowsing data with specific reference to pages consulted and products viewed on the Website, in order to offer personalized services and send targeted marketing communications on this basis."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 76,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "This activity is carried out by Luxottica on the basis of Luxottica’s legitimate interest to provide a service in line with your needs, adequately balanced with your rights given the consent provided through the cookie banner and in line with our Cookie Policy."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 81,
+    "activity": [
+      "share_to_social"
+    ],
+    "data_collected": [],
+    "source_text": "To exercise or defend legal claims in court proceedings or in an administrative or out-of-court procedures relating to the rights of Luxottica, of its group companies and/or of their representatives, shareholders, officers and directors;"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 94,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Therefore users are invited to use a password sufficiently secure and stored in a safe place, limiting access to it on their own computers and browsers, disconnecting it after having visited the Website."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 96,
+    "activity": [],
+    "data_collected": [
+      "payment"
+    ],
+    "source_text": "Furthermore, a secure system for authorizing credit card payments and identifying fraudulent activities is used."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 116,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "Luxottica will process your Personal Data for Contractual and Legitimate Interest Purposes for the duration of the contract (in case of an account created on the Website, of a purchase, or in relation to services provided by Luxottica) and for 10 years from the completion of the sale or of the provided service."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 118,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "Furthermore, for Marketing and Profiling Purposes, including Segmentation Purposes, Personal Data will be processed for 7 years from the last purchase and/or from the last contact with you (e.g. subscription to a prize competition, participation to an event, opening of a newsletter), notwithstanding the right to withdraw the consent provided or object to the processing at any time."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 124,
+    "activity": [
+      "pair_device",
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "Luxottica is the manufacturer and distributor of RAY-BAN META GLASSES and any information you provide to Luxottica in connection with your purchase of RAY-BAN META GLASSES is subject to Luxottica’s terms and policies."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 125,
+    "activity": [
+      "contact_support",
+      "share_to_social"
+    ],
+    "data_collected": [
+      "identifier"
+    ],
+    "source_text": "Luxottica share and receive information with Meta to manage your customer service requests related to RAY-BAN META GLASSES; for example, Luxottica may share with Meta your name, email address and information about the issue you are experiencing, and Meta share with Luxottica information to help resolve the issue, such as steps to resolve a problem with your Meta account."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 127,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "On the related Section of the Site Luxottica and Meta will collect through a pixel technology information in order to offer you personalized advertisements and to promote the relevant content and actions (for more information please refers to the Cookies Policy)."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 156,
+    "activity": [
+      "create_account"
+    ],
+    "data_collected": [],
+    "source_text": "Indeed, every registered user may access his/her own information and update it (e.g. through user account)."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 161,
+    "activity": [
+      "create_account"
+    ],
+    "data_collected": [],
+    "source_text": "The Data Controller of the processing of your Personal Data is Luxottica Group S.p.A., with registered office in Piazzale Luigi Cadorna, 3, 20123 Milan, Italy."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 162,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [],
+    "source_text": "Should you have questions or comments on this Data Protection Policy or on any data processing carried out by Luxottica, Luxottica may be contacted through the link available in the previous paragraph."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 165,
+    "activity": [],
+    "data_collected": [
+      "identifier"
+    ],
+    "source_text": "Luxottica has appointed a Data Protection Officer according to Article 37 of the GDPR, which can be contacted at the following email address dpo@luxottica.com or to the address of Luxottica provided for in section “HOW CAN YOU CONTACT LUXOTTICA?” of this Data Protection Policy"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 174,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "A cookie is a small text file, usually consisting of letters and numbers, which is transferred and stored, for a time determined by the operator, on the device used by the user (a computer or any mobile device) when the user accesses the website."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 176,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Please note that other similar technologies used to collect information about the device you are using, such as pixel tags, web beacons or social network plug-ins, also fall into the general category of “cookies”."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 177,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "14.2 Why we use cookies"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 178,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Some cookies are absolutely necessary to allow the Site to function properly and provide the user with a good browsing experience, such as simply moving from one page of the Site to another, and providing the services envisaged therein (e.g. purchasing and paying for glasses)."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 179,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Other cookies are necessary to make browsing easier and faster, e.g. by remembering registration data or the contents of the shopping bag, or to make browsing as in line as possible with the user’s preferences and characteristics."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 180,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "In addition, certain cookies are useful for providing the operator of the Site with information that can be used for statistical purposes, for example to know the number of users connected, as well as for sending personalised promotional messages, or to ensure a direct link with social networks."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 182,
+    "activity": [],
+    "data_collected": [
+      "device_info",
+      "identifier",
+      "location",
+      "usage_events"
+    ],
+    "source_text": "The information collected in the form of cookies generally relates to information about the user’s device, such as IP address, login details, operating system and platform used, time zone setting, country of origin, information about visits to the Site including the URL, length of visit, search terms typed on the Site, products viewed or placed in the shopping bag, page response times, download errors and information about page interaction, such as the number of clicks or browsing patterns."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 184,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "We have coded and distinguished cookies according to how long they are stored on the user’s device, the party who installs and manages them and, above all, the purposes for which they are installed."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 188,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Permanent cookies are cookies that are stored on the user’s device for a period predetermined by the operator, even after closing the browser."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 189,
+    "activity": [],
+    "data_collected": [
+      "identifier"
+    ],
+    "source_text": "They allow, for example, the user’s name and password to be saved or preferences to be remembered, so that the user does not have to enter them again when opening the site."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 192,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "On the other hand, third-party cookies are installed by an operator through a domain different from that of the Site on which the user is browsing and are not directly controlled by Luxottica."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 195,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "c) Purposes of the cookies used by Luxottica on this Site"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 196,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "- Strictly necessary (or technical) cookies: they ensure the proper functioning of the Site and the use of the services existing on it."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 197,
+    "activity": [
+      "pair_device",
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "device_info",
+      "location"
+    ],
+    "source_text": "They make it possible, for example, to recognise the language of the country from which the user is connecting and to save the choices made on the banner containing the short privacy policy (consent to the use of cookies), thus avoiding having to make the choice again each time the site is accessed, to make a purchase of a product."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 200,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "The user can set their browser to block these cookies, but as a result some or all parts of the site will not work."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 201,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "- Analytical cookies: some are installed and managed directly by Luxottica and are used to analyse how the Site is used, to count accesses, traffic sources, pages viewed, so as to allow the operator to make changes and improvements to the Site."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 203,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Other analytical cookies may be instead installed by third parties in order to track the user’s activity on the Site drawing useful information for Luxottica."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 204,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "To help the user in making a more informed decision on whether or not to consent to the collection of such cookies, please read Google’s respective privacy policies (https://policies.google.com/privacy?hl=en-US ) or visit: http://www.youronlinechoices.com/it/"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 205,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "- Marketing and profiling cookies: they track the user’s navigation on the Site, allowing the creation of personalised content on the Site, showing the user products of their interest or similar to those already viewed, sending advertising messages in line with the preferences expressed: refusal or withdrawal of consent will not interfere with the possibility of accessing or browsing the Site."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 206,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Other analytical cookies may be instead installed by third parties in order to track the user’s activity on the Site drawing useful information for Luxottica."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 208,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "To help the user in making a more informed decision on whether or not to consent to the collection of such cookies, please read Google’s respective privacy policies, regarding Google Adsense (https://policies.google.com/privacy?hl=en-GB )."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 209,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "- Social Network Cookies: these allow the user to use the various social network functions, thanks to the use of plug-ins, integrated into our Site, which allow a direct connection with the social network server."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 212,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "For information on the use of cookies by social networks and to give informed consent, we invite the user to consult the social networks’ respective privacy policies:"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 222,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "With regard to the other categories of cookies, for which it is necessary to give consent or not, the first time the user accesses the site they will see a cookie banner (Privacy Preferences) containing the short privacy policy and a link to the Cookies Policy."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 223,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "If the user has already communicated their preferences via the cookie banner, the cookie banner will no longer be displayed automatically if you access the site again in the next 6 months."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 225,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "However, if consent has already been given to the use of cookies, in order for the cookies collected prior to their revocation to be deleted, the user must delete them via the settings of their browser."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 226,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "Below are instructions on how to change the cookie settings on the browsers most commonly used by users:"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 228,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "The list of cookies and similar technologies used on this Site is available here"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 229,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "14.5 Who has access to the information collected via cookies"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 230,
+    "activity": [],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "With reference to the cookies installed by Luxottica, only Luxottica personnel in charge, previously trained and instructed to carry out such tasks, may access the information collected through cookies."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Internet privacy policy",
+    "clause_id": 231,
+    "activity": [
+      "pair_device"
+    ],
+    "data_collected": [
+      "device_info"
+    ],
+    "source_text": "With reference to third party cookies, information is collected and used by Luxottica and by external parties linked to Luxottica by a contractual relationship."
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "Join The Ones community and get a special welcome reward.",
+    "clause_id": 298,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "The Ones OneSight Store Locator ONLINE & STORE SERVICES Get Support Track Orders Track Returns Gift Card Balance FAQ MORE FROM META report a Fake Returns"
+  },
+  {
+    "doc_id": "rayban_2024",
+    "product": "rayban_glasses",
+    "section": "HOW TO COMPARE?",
+    "clause_id": 329,
+    "activity": [
+      "purchase_glasses"
+    ],
+    "data_collected": [],
+    "source_text": "Only used if there are issues with your order"
+  }
+]
