@@ -220,6 +220,4 @@ cat data/diffs/v1_vs_v2.json
 
 ---
 
-## License
 
-This project is for research and educational purposes.
