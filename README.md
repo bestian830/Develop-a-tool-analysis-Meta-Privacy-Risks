@@ -107,7 +107,7 @@ ACTIVITY_LEXICON = {
 
 ```
 capestone/
-├── data/                      # All output files (auto-generated)
+├── data/                      # All output files
 │   ├── raw/                   # Downloaded HTML files
 │   ├── clean/                 # Parsed JSON (sections + paragraphs)
 │   ├── clauses/               # Split sentences
