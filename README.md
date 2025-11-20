@@ -70,7 +70,7 @@ python tools/run_analysis.py compare \
 
 ## How to Customize (The Lexicon)
 
-All privacy detection logic is in **`src/lexicon.py`**. You can edit it to match your specific needs.
+All privacy detection logic is in **`src/lexicon.py`**. 
 
 ### Example: Add a New Data Category
 
@@ -111,11 +111,11 @@ capestone/
 │   ├── raw/                   # Downloaded HTML files
 │   ├── clean/                 # Parsed JSON (sections + paragraphs)
 │   ├── clauses/               # Split sentences
-│   ├── claims/                # ✨ Final extracted claims
+│   ├── claims/                # Final extracted claims
 │   └── diffs/                 # Comparison results
 │
 ├── src/                       # Source code
-│   ├── lexicon.py            # ⚙️ Configuration (edit this!)
+│   ├── lexicon.py            # Configuration
 │   ├── downloader.py         # Selenium web scraper
 │   ├── parser.py             # HTML → JSON converter
 │   ├── clause_splitter.py    # Sentence segmentation
@@ -124,7 +124,7 @@ capestone/
 │   └── pipeline.py           # Orchestrates all steps
 │
 ├── tools/
-│   └── run_analysis.py       # 🎯 Main CLI entry point
+│   └── run_analysis.py       #  Main CLI entry point
 │
 ├── tests/                     # Unit tests
 └── requirements.txt           # Python dependencies
