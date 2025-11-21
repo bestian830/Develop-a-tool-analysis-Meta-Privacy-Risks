@@ -51,7 +51,7 @@ python tools/run_analysis.py analyze \
 - Downloads HTML → `data/raw/rayban_2024.html`
 - Parses sections → `data/clean/rayban_2024.json`
 - Splits sentences → `data/clauses/rayban_2024_clauses.json`
-- Extracts claims → `data/claims/rayban_2024_claims.json` ✨ **This is the final output**
+- Extracts claims → `data/claims/rayban_2024_claims.json` **This is the final output**
 
 ### 3. Compare Two Versions
 
