@@ -2,9 +2,7 @@
 
 DATA_LEXICON = {
 
-    # -----------------------
     # 1. Identifiers
-    # -----------------------
     "identifier": [
         "name", "full name", "email", "phone", "telephone", "username",
         "ip address", "user id", "account id", "identifier",
@@ -12,9 +10,7 @@ DATA_LEXICON = {
         "is identified", "identifiable"
     ],
 
-    # -----------------------
     # 2. Location Data
-    # -----------------------
     "location": [
         "location", "geolocation", "gps", "locational",
         "precise location", "approximate location",
@@ -22,9 +18,7 @@ DATA_LEXICON = {
         "location is collected", "location data"
     ],
 
-    # -----------------------
     # 3. Audio Data
-    # -----------------------
     "audio": [
         "audio", "voice recording", "microphone", "sound",
         "voice command", "voice interactions",
@@ -32,9 +26,7 @@ DATA_LEXICON = {
         "audio is collected", "audio data", "voice data"
     ],
 
-    # -----------------------
     # 4. Image / Video Data
-    # -----------------------
     "video_image": [
         "photo", "photos", "picture", "video", "image",
         "visual information", "camera", "recording",
@@ -43,9 +35,7 @@ DATA_LEXICON = {
         "photo data"
     ],
 
-    # -----------------------
     # 5. Device Information
-    # -----------------------
     "device_info": [
         "device information", "device info", "hardware",
         "software version", "browser", "operating system",
@@ -55,9 +45,7 @@ DATA_LEXICON = {
         "device data", "device logs"
     ],
 
-    # -----------------------
     # 6. Usage & Event Logs
-    # -----------------------
     "usage_events": [
         "app usage", "log data", "events", "clicks",
         "interactions", "how you use", "performance data",
@@ -65,27 +53,21 @@ DATA_LEXICON = {
         "usage data", "event logs", "analytics data"
     ],
 
-    # -----------------------
     # 7. Payment Information
-    # -----------------------
     "payment": [
         "credit card", "transaction info", "payment details",
         "billing address", "purchase history", "payment information",
         "financial data"
     ],
 
-    # -----------------------
     # 8. Biometric Information
-    # -----------------------
     "biometrics": [
         "facial geometry", "voiceprint", "retinal scan",
         "biometric", "face recognition", "biometric identifier",
         "biometric data"
     ],
 
-    # -----------------------
     # 9. Health Information
-    # -----------------------
     "health": [
         "prescription data", "medical info", "health data",
         "eyesight check", "health related", "vision information",
@@ -93,11 +75,6 @@ DATA_LEXICON = {
     ]
 }
 
-
-
-# ================================================================
-# Activities
-# ================================================================
 
 ACTIVITY_LEXICON = {
 
@@ -181,10 +158,6 @@ ACTIVITY_LEXICON = {
     ]
 }
 
-
-# ================================================================
-# Collection verbs (active, passive, nominal)
-# ================================================================
 
 COLLECTION_VERBS = [
     # Active  
